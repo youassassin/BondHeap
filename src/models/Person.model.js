@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose');
+import { Schema, model } from 'mongoose';
 
 const PriorityEnum = Object.freeze({
     NONE: 'None',

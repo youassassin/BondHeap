@@ -1,0 +1,32 @@
+{
+    "relations": [
+        {
+            "fullName": {
+                "first": "John",
+                "last": "Doe"
+            },
+            "notes": "Engineer"
+        },
+        {
+            "fullName": {
+                "first": "Jane",
+                "last": "Smith"
+            },
+            "notes": "Manager"
+        },
+        {
+            "fullName": {
+                "first": "Alice",
+                "last": "Johnson"
+            },
+            "notes": "Designer"
+        },
+        {
+            "fullName": {
+                "first": "Bob",
+                "last": "Brown"
+            },
+            "notes": "Developer"
+        }
+    ]
+}

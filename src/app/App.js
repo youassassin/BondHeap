@@ -8,7 +8,8 @@ import {
   View,
 } from 'react-native';
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
-import ListView from './components/ListView.component';
+import ListView from './pages/List.view';
+import getPeople from '../hooks/People.hook';
 
 const STYLES = ['default', 'dark-content', 'light-content'];
 const TRANSITIONS = ['fade', 'slide', 'none'];
@@ -40,10 +41,12 @@ const App = () => {
     }
   };
 
+  const people = getPeople();
+
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
-        <ListView items={['Item 1', 'Item 2', 'Item 3']} />
+        <ListView people={people} />
         <StatusBar
           animated={true}
           backgroundColor="#61dafb"
